@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munday Halliwell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo.png" alt="logo" class="logo-img">
+        <form action="#">
+            <section class="form-flex">
+                <section class="name">
+                    <section class="firstName">
+                        <label for="firstName">First name?*</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </section>
+                    <section class="line"></section>
+                    <section class="lastName">
+                        <label for="lastName">Last name*</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </section>
+                </section>
+                <section class="email">
+                    <label for="email">Email address*</label>
+                    <input type="email" name="email" id="email" required>
+                </section>
+                <section class="phoneContact">
+                    <label for="phoneContact">Phone contact*</label>
+                    <input type="text" name="phoneContact" id="phoneContact" required>  
+                </section>
+                <section class="currentAddress">
+                    <label for="currentAddress">Current address*</label>
+                    <section class="street-city">
+                        <section class="street">
+                            <label for="street">Street*</label>
+                            <input type="text" name="street" id="street" required>
+                        </section>
+                        <section class="city">
+                            <label for="city">City/Suburb</label>
+                            <input type="text" name="city" id="city" required>
+                        </section>
+                    </section>
+                    <section class="state-zip">
+                        <section class="state">
+                            <label for="state">State*</label>
+                            <input type="text" name="state" id="state" required>
+                        </section>
+                        <section class="zipCode">
+                            <label for="zipCode">Zip/Post Code</label>
+                            <input type="text" name="zipCode" id="zipCode" required>
+                        </section>
+                    </section>
+                    <section class="Country">
+                        <label for="country">Contry*</label>
+                        <input type="text" name="Contry" id="country" required>
+                    </section>
+                </section>
+                <section class="interest">
+                    <label for="interest">Please list the property or properties of interest*</label>
+                    <textarea name="interest" id="interest" rows="5" cols="80"></textarea>
+                </section>
+                <section class="date">
+                    <label for="date">When would you like a viewing?*</label>
+                    <input type="date" name="date" id="date" required>
+                </section>
+                <section class="location">
+                    <label for="location">Prefernce of location?*</label>
+                    <select name="location" id="location">
+                        <option value="">Select...</option>
+                        <option value="tamilnadu">Tamilnadu</option>
+                    </select>
+                </section>
+                <section class="lookingFor">
+                    <label for="lookingFor">What kind of property are you looking for?*</label>
+                    <select name="lookingFor" id="lookingFor">
+                        <option value="">Select...</option>
+                        <option value="tamilnadu">Tamilnadu</option>
+                    </select>
+                </section>
+                <section class="budget">
+                    <label for="budget">What is your budget?*</label>
+                    <select name="budget" id="budget">
+                        <option value="">Select...</option>
+                        <option value="tamilnadu">Tamilnadu</option>
+                    </select>
+                </section>
+                <section class="requests">
+                    <label for="requests">Additional comments or requests</label>
+                    <section class="range">
+                        <p>5000</p>
+                        <input type="range" name="requests" id="requests" max="5000" min="100" value="5000" required>
+                        <p>100</p>
+                    </section>
+                </section>
+            </section>
+            <section class="submit">
+                <button type="submit" id="submit">Submit now</button>
+            </section>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.logo-img{
+    align-self: center;
+    width: 30.5%;
+}
+
+form{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 90%;
+    border: 2px solid #0000004f;
+}
+
+.form-flex{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+input,select{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #0000004f;
+    outline: none;
+    font-size: 19px;
+}
+
+#date{
+    width: 50%;
+}
+
+#interest{
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+}
+
+select,textarea{
+    background-color: #d5d5d536;
+}
+
+textarea{
+    margin-top: 10px;
+}
+
+.range{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+}
+
+#requests{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    outline: none;
+    border-radius: 3px;
+    background-color: #2d266c;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+#requests::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    cursor: pointer;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #2d266c;
+}
+
+#submit{
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    border: none;
+    background-color: #2d266c;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* border*/
+
+.name,
+.email,
+.phoneContact,
+.currentAddress,
+.interest,
+.date,
+.location,
+.lookingFor,
+.budget,
+.requests
+{
+    padding: 10px;
+    border-bottom: 2px solid #0000004f;
+}
+
+.line{
+    height: 80px;
+    width: 2px;
+    background-color: #0000004f;
+}
+
+.name{
+    padding: 0 10px;
+}
+
+/* flex layout */
+
+.name,.street-city,.state-zip{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.name .firstName,.lastName{
+    flex: 1;
+}
+
+.street-city .street,.city{
+    flex: 1;
+}
+
+.state-zip .state,.zipCode{
+    flex: 1;
+}
+
+.date{
+    display: flex;
+    flex-direction: column;
+}
+
+#date:required::-webkit-datetime-edit{
+    color: gray;
+}
+
+#date:focus::-webkit-datetime-edit{
+    color: black;
+}
+
+.currentAddress{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
